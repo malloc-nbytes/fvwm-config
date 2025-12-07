@@ -158,7 +158,8 @@ Key i A 4 Exec floorp &  # Start floorp: Windows key + f.
 Key s A 4 Exec steam &   # Start steam: Windows key + s.
 Key d A 4 Exec discord & # Start discord: Windows key + d.
 Key f A 4 Exec pcmanfm &
-Key c A 4 Exec xclock -digital & # Start xclock: Windows key + c.
+#Key c A 4 Exec xclock -digital & # Start xclock: Windows key + c.
+Key c A 4 Exec notify-send -t 2000 "$(date)"
 
 Key P A 4 Exec rofi -combi drun,run -show drun -show-icons # Show demenu / rofi
 
