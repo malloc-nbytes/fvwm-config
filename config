@@ -172,6 +172,8 @@ Key minus A 4 Iconify
 Key Return A 4 Exec alacritty & # New terminal: Win + Enter.
 
 Key bracketright A 4 Exec ibus engine anthy
-Key bracketleft A 4 Exec /bin/sh -c 'ibus engine xkb:us::eng && /bin/sh /home/zdh/Scripts/kb'
+Key bracketleft A 4 Exec /bin/sh -c 'ibus engine xkb:us::eng && /bin/sh /home/zdh/Scripts/kb && notify-send -t 1000 "Switched to EN"'
+
+Exec exec dunst &
 
 # == End of config file ==
