@@ -62,6 +62,7 @@ Style * PositionPlacement UnderMouse
 
 # Listeners for root window (the "desktop").
 Mouse 1 W 4 Move-or-Raise
+Mouse 1 R A Nop
 #Mouse 1   W   M   Move
 Mouse 2 W 4 Lower
 
