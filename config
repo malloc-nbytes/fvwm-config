@@ -26,7 +26,10 @@ EdgeScroll 0 0
 Style * BorderWidth 2, HandleWidth 2          # thin borders
 Style * !Title, !Handles, !Button           # REMOVE titlebar and all buttons
 Style * FirmBorder                          # makes all 4 sides look identical
-
+# Polybar panel: no decorations, fixed, sticky, etc.
+Style "polybar*" !Title, !Handles, !Borders, BorderWidth 0, HandleWidth 0, \
+                 Sticky, StaysOnTop, FixedPosition, FixedSize, \
+                 SkipMapping, WindowListSkip, Layer 4 0
 
 # Border colors
 # Inactive border
@@ -177,5 +180,6 @@ Key bracketright A 4 Exec ibus engine anthy
 Key bracketleft A 4 Exec /bin/sh -c 'ibus engine xkb:us::eng && /bin/sh /home/zdh/Scripts/kb && notify-send -t 1000 "Switched to EN"'
 
 Exec exec dunst &
+Exec exec /home/zdh/.config/polybar/launch
 
 # == End of config file ==
