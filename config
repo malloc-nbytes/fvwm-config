@@ -158,7 +158,8 @@ Key Tab A 4 Resize # Activate resize window mode: Win + tab.
 Mouse 3 A 4 Resize warptoborder automatic
 
 Key e A 4 Exec emacs &   # Start emacs: Windows key + e.
-Key i A 4 Exec floorp &  # Start floorp: Windows key + f.
+#Key i A 4 Exec floorp &  # Start floorp: Windows key + f.
+Key i A 4 Exec qutebrowser &  # Start floorp: Windows key + f.
 Key s A 4 Exec steam &   # Start steam: Windows key + s.
 Key d A 4 Exec discord & # Start discord: Windows key + d.
 Key f A 4 Exec pcmanfm &
